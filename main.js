@@ -301,7 +301,11 @@ function winX () {
         blackBar.style.backgroundColor = "#2146C7"
         victoryX.style.visibility = "visible"
         blueScore.innerText = blue
-    }, 50)
+    }, 500)
+    setTimeout(() => {
+        blackBar.style.visibility = "hidden"
+        victoryX.style.visibility = "hidden"
+    }, 1500)
 }
 
 function winO () {
@@ -311,15 +315,23 @@ function winO () {
         blackBar.style.backgroundColor = "#CF0A0A"
         victoryO.style.visibility = "visible"
         redScore.innerText = red
-    }, 50)
+    }, 500)
+    setTimeout(() => {
+        blackBar.style.visibility = "hidden"
+        victoryO.style.visibility = "hidden"
+    }, 1500)
 }
 
 function draw () {
     setTimeout (() => {
         blackBar.style.visibility = "visible"
-        blackBar.style.backgroundColor = "#665A48"
+        blackBar.style.backgroundColor = "#b99155"
         DRAW.style.visibility = "visible"
-    }, 50)
+    }, 500)
+    setTimeout(() => {
+        blackBar.style.visibility = "hidden"
+        DRAW.style.visibility = "hidden"
+    }, 1500)
 }
 
 function play() {
